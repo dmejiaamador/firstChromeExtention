@@ -1,0 +1,16 @@
+{
+  "name": "Reddit Randomizer",
+  "version": "2",
+  "manifest_version": 2,
+  "description": "help feed your procrastination",
+
+  "permissions": ["http://*.reddit.com/"],
+  "content_scripts":[
+  {
+  	"matches": ["*://*.reddit.com/*"],
+  	"js": ["bg.js"]
+  }
+  ]
+
+  
+}
